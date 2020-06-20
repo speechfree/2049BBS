@@ -58,9 +58,10 @@ required = ["github.com/russross/blackfriday"]
   branch = "master"
   name = "github.com/russross/blackfriday"
 
-[[constraint]]
+[[override]]
+  branch = "master"
   name = "github.com/terminus2049/2049bbs"
-  version = "0.2.0"
+
 
 [[constraint]]
   branch = "master"
@@ -74,9 +75,9 @@ required = ["github.com/russross/blackfriday"]
   branch = "master"
   name = "github.com/xi2/httpgzip"
 
-[[constraint]]
+[[override]]
   name = "github.com/yanyiwu/gojieba"
-  version = "1.1.0"
+  version = "1.1.1"
 
 [[constraint]]
   name = "goji.io"

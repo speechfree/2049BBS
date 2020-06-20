@@ -5,8 +5,9 @@ services:
     container_name: bbs
     ports:
       - 8000:8082
+      - 8001:8089
     # env_file: dev.env
     volumes:
-      - "./:/go/src/github.com/terminus2049/2049BBS"
-    working_dir: /go/src/github.com/terminus2049/2049BBS
+      - "./:/go/src/github.com/terminus2049/2049bbs"
+    working_dir: /go/src/github.com/terminus2049/2049bbs
     command: ["tail", "-f", "/dev/null"]

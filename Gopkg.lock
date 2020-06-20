@@ -10,6 +10,14 @@
   revision = "eac43a689475a8a9e9a1c4423778c88d6ae7c794"
 
 [[projects]]
+  branch = "master"
+  digest = "1:c5adc5ca51740cc57d27d8e8ea0975008aa57ec91537a6948d8945c9f7dd1893"
+  name = "github.com/Terminus2049/github_flavored_markdown"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "c5535a82925c61b329e9e754cafe252d9f1b2dda"
+
+[[projects]]
   digest = "1:0f98f59e9a2f4070d66f0c9c39561f68fcd1dc837b22a852d28d0003aebd1b1e"
   name = "github.com/boltdb/bolt"
   packages = ["."]
@@ -50,27 +58,15 @@
   version = "v1.1.1"
 
 [[projects]]
-  digest = "1:b2b813be1a452771dc2e9d0259af3070a3f23e59225c6e5ea73df82ba4ba881d"
-  name = "github.com/h2non/filetype"
-  packages = [
-    "matchers",
-    "matchers/isobmff",
-    "types",
-  ]
-  pruneopts = "UT"
-  revision = "add8f680eeb7b6baeee288a89bd54574de25b406"
-  version = "v1.0.10"
-
-[[projects]]
-  digest = "1:6651c1394c6776758abaf2b2333e0459af1e3479b0969f3d871a1c8dbffd6cd9"
+  digest = "1:b56d1c8805a3c4d59aa9ed4b17e3a859c10cde4c8ab47c65c8aaf6b4659d057b"
   name = "github.com/klauspost/compress"
   packages = [
     "flate",
     "gzip",
   ]
   pruneopts = "UT"
-  revision = "438db640fd672278e44bb9bec0b979358e7e9c76"
-  version = "v1.9.4"
+  revision = "7d4a7636a2a9987e3f1fccaf10e8aa65ae54cefa"
+  version = "v1.10.9"
 
 [[projects]]
   digest = "1:6ff1026b8d873d074ddec82ad60bb0eb537dc013f456ef26b63d30beba2f99e7"
@@ -79,34 +75,6 @@
   pruneopts = "UT"
   revision = "506f3da9b7c86d737e91f16b7431df8635871552"
   version = "v1.0.2"
-
-[[projects]]
-  digest = "1:fdbd8fb88ba8ac5b971f446b83785963bdc4549bb51e08331d571ad1300e4412"
-  name = "github.com/o1egl/govatar"
-  packages = [
-    ".",
-    "bindata",
-  ]
-  pruneopts = "UT"
-  revision = "fd0ac734f4e77cfda4cc1bc4400e82fe1fcca8a2"
-  version = "v0.3.0"
-
-[[projects]]
-  digest = "1:e51386f7d4aff633fd4dc239e4a9c453d019a3c0c7ac55a1e5e64a89e075c615"
-  name = "github.com/qiniu/api.v7"
-  packages = [
-    ".",
-    "auth",
-    "auth/qbox",
-    "client",
-    "conf",
-    "internal/log",
-    "reqid",
-    "storage",
-  ]
-  pruneopts = "UT"
-  revision = "bea02cd22bf47c650b3c7f0fa001885e7cf7d483"
-  version = "v7.3.0"
 
 [[projects]]
   digest = "1:2e76a73cb51f42d63a2a1a85b3dc5731fd4faf6821b434bd0ef2c099186031d6"
@@ -131,14 +99,6 @@
   pruneopts = "UT"
   revision = "1744e2970ca51c86172c8190fadad617561ed6e7"
   version = "v1.0.0"
-
-[[projects]]
-  branch = "master"
-  digest = "1:17dbf2af7ad8e9f45ace81f8cfbb18bea8baf165f3b5bb55d82f4ddaf4fbc7f3"
-  name = "github.com/shurcooL/github_flavored_markdown"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "2122de53247006a637e59cf1c99d0770312d4be3"
 
 [[projects]]
   branch = "master"
@@ -222,24 +182,6 @@
   revision = "bd320f5d308e1a3c4314c678d8227a0d72574ae7"
 
 [[projects]]
-  digest = "1:f208441d0016b917c90f5aa47d3ec7b545f15f992590867cd30d5f720cb81eed"
-  name = "github.com/terminus2049/2049bbs"
-  packages = [
-    "controller",
-    "cronjob",
-    "lib/qqOAuth",
-    "lib/upyun",
-    "lib/weiboOAuth",
-    "model",
-    "router",
-    "system",
-    "util",
-  ]
-  pruneopts = "UT"
-  revision = "23ee4744af7bc92abf7a160b72487372cebbc37c"
-  version = "v0.2.0"
-
-[[projects]]
   branch = "master"
   digest = "1:8e1280b9241df7454aa82b06fcaf7b0685bad98b070d4cc73e0b1cf30ce1139d"
   name = "github.com/weint/config"
@@ -267,12 +209,17 @@
   revision = "932ab5e254aeb4a9044e2647411c3e62c0797dc5"
 
 [[projects]]
-  digest = "1:d7ade7ab6bc19c183c7ac099dda456e86571f6154036dcb37ed15c6bd533fd50"
+  digest = "1:e1e3f9055b9815694c65a6281351885e061dc03585ffd5879e9f5b029f46924d"
   name = "github.com/yanyiwu/gojieba"
-  packages = ["."]
+  packages = [
+    ".",
+    "deps/cppjieba",
+    "deps/limonp",
+    "dict",
+  ]
   pruneopts = "UT"
-  revision = "57835cec3fcc5e7046765d367273cfede5df0ce5"
-  version = "v1.1.0"
+  revision = "86e446422411bf948bd92f6a13f6858a30810adf"
+  version = "v1.1.2"
 
 [[projects]]
   digest = "1:6e898847e5e1a1e0068a915fc9d4476a6e3399ee3cdd1122f3dad90e49c9c3b8"
@@ -360,14 +307,6 @@
   version = "v0.3.2"
 
 [[projects]]
-  digest = "1:06b370a3ee8562ef078a8871741c2075c15ce5969ad45ec98cc9fdec5917e3c1"
-  name = "gopkg.in/h2non/filetype.v1"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "add8f680eeb7b6baeee288a89bd54574de25b406"
-  version = "v1.0.10"
-
-[[projects]]
   digest = "1:b75b3deb2bce8bc079e16bb2aecfe01eb80098f5650f9e93e5643ca8b7b73737"
   name = "gopkg.in/yaml.v2"
   packages = ["."]
@@ -379,6 +318,7 @@
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
+    "github.com/Terminus2049/github_flavored_markdown",
     "github.com/boltdb/bolt",
     "github.com/dchest/captcha",
     "github.com/disintegration/imaging",
@@ -386,13 +326,6 @@
     "github.com/gorilla/securecookie",
     "github.com/rs/xid",
     "github.com/russross/blackfriday",
-    "github.com/shurcooL/github_flavored_markdown",
-    "github.com/terminus2049/2049bbs/controller",
-    "github.com/terminus2049/2049bbs/cronjob",
-    "github.com/terminus2049/2049bbs/model",
-    "github.com/terminus2049/2049bbs/router",
-    "github.com/terminus2049/2049bbs/system",
-    "github.com/terminus2049/2049bbs/util",
     "github.com/weint/config",
     "github.com/weint/httpclient",
     "github.com/xi2/httpgzip",
